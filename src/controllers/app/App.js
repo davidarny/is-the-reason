@@ -1,7 +1,13 @@
 import PhotoService from "services/photo";
+import config from "config";
 
 export class App {
-    _services = { photo: new PhotoService({ width: 400, height: 300 }) };
+    _services = {
+        photo: new PhotoService({
+            width: config.image.width,
+            height: config.image.height,
+        }),
+    };
 
     constructor(setter) {
         this._setState = setter;
@@ -17,6 +23,6 @@ export class App {
     };
 
     onIconMouseLeave = () => {
-        this._setState({ background: "#ffffff", shadow: "none" });
+        this._setState({ background: "white", shadow: "none" });
     };
 }

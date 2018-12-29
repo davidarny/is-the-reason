@@ -1,35 +1,50 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Centered from "shared/centered";
+import styled from "styled-components";
+import * as system from "styled-system";
+import config from "config";
 
-export function Icon(props) {
+function Icon(props) {
     return (
-        <Centered
-            width={`${props.size}px`}
-            height={`${props.size}px`}
-            borderRadius={"50%"}
-            background={props.background}
-            p={"10px"}
-            cursor={"pointer"}
-            {...props}
-        >
-            <img alt={"Icon"} {...props} onError={(event) => onImageLoadError(event, props.size)} />
+        <Centered cursor={"pointer"} className={props.className}>
+            <img alt={props.alt} src={props.src} onError={(event) => onImageLoadError(event, props.size)} />
         </Centered>
     );
 }
 
-Icon.propTypes = {
-    ...Centered.propTypes,
-    size: PropTypes.number.isRequired,
+const hoverBackground = system.style({
+    prop: "hoverBackground",
+    cssProperty: "background",
+});
+
+export const StyledIcon = styled(Icon)`
+    ${system.background}
+    ${system.width}
+    ${system.height}
+    border-radius: 50%;
+    transition:
+        background-color
+        ${system.themeGet("transitionDuration", "0.15s")}
+        ${system.themeGet("transitionFunction", "ease-in-out")};
+
+    :hover {
+        ${hoverBackground}
+    }
+`;
+
+StyledIcon.propTypes = {
+    ...system.background.propTypes,
+    ...system.width.propTypes,
+    ...system.height.propTypes,
     src: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
-    background: PropTypes.string,
 };
 
-Icon.defaultProps = {
+StyledIcon.defaultProps = {
     background: "black",
 };
 
 function onImageLoadError(event, size) {
-    event.target.setAttribute("src", `https://via.placeholder.com/${size}`);
+    event.target.setAttribute("src", config.image.stub.replace("{width}", size).replace("{height}", size));
 }

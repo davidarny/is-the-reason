@@ -14,6 +14,7 @@ export const Wrapper = styled.div`
     ${system.display}
     ${system.space}
     ${system.gridTemplateRows}
+    ${system.gridTemplateColumns}
     ${system.gridRowGap}
     ${system.position}
     ${system.boxShadow}
@@ -24,6 +25,8 @@ export const Wrapper = styled.div`
     ${system.border}
     ${system.width}
     ${system.height}
+    ${system.maxWidth}
+    ${system.zIndex}
     ${cursor}
     ${transition}
 `;
@@ -32,6 +35,7 @@ Wrapper.propTypes = {
     ...system.display.propTypes,
     ...system.space.propTypes,
     ...system.gridTemplateRows.propTypes,
+    ...system.gridTemplateColumns.propTypes,
     ...system.gridRowGap.propTypes,
     ...system.position.propTypes,
     ...system.boxShadow.propTypes,
@@ -41,5 +45,7 @@ Wrapper.propTypes = {
     ...system.borderRadius.propTypes,
     ...system.border.propTypes,
     ...system.width.propTypes,
+    ...system.maxHeight.propTypes,
     ...system.height.propTypes,
+    ...system.zIndex.propTypes,
 };

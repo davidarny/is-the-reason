@@ -6,12 +6,14 @@ export function Card(props) {
     return (
         <Wrapper
             display={"grid"}
-            gridTemplateRows={"6fr auto auto 1fr"}
+            gridTemplateRows={"5fr auto 1fr auto"}
+            gridTemplateColumns={"auto"}
             gridRowGap={"1em"}
-            p={"6em 4em"}
+            p={"50px"}
             position={"relative"}
             background={"white"}
             boxShadow={props.shadow}
+            alignItems={"center"}
             transition={"box-shadow 0.15s ease-in-out"}
             {...props}
         >

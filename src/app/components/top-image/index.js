@@ -1,1 +1,1 @@
-export { TopImage as default } from "./TopImage";
+export { StyledTopImage as default } from "./TopImage";

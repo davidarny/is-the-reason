@@ -12,6 +12,7 @@ export const Absolute = styled.div`
     ${system.left}
     ${system.bottom}
     ${system.right}
+    ${system.zIndex}
     ${pointerEvents}
 `;
 
@@ -20,4 +21,5 @@ Absolute.propTypes = {
     ...system.left.propTypes,
     ...system.bottom.propTypes,
     ...system.right.propTypes,
+    ...system.zIndex.propTypes,
 };

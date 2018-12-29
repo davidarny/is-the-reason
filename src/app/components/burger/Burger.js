@@ -4,10 +4,14 @@ import Wrapper from "shared/wrapper";
 
 export function Burger(props) {
     return (
-        <Wrapper styles={"cursor: pointer"} {...props}>
+        <Wrapper cursor={"pointer"} {...props}>
             <Slice mb={"5px"} />
             <Slice mb={"5px"} />
             <Slice />
         </Wrapper>
     );
 }
+
+Burger.propTypes = {
+    ...Wrapper.propTypes,
+};

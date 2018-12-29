@@ -1,7 +1,9 @@
+import config from "config";
+
 export class Photo {
-    _height = 300;
-    _width = 200;
-    _url = "https://picsum.photos/{width}/{height}/?random&с={timestamp}";
+    _height = config.image.width;
+    _width = config.image.height;
+    _url = config.image.url;
 
     constructor(dimensions) {
         if (!dimensions) {
