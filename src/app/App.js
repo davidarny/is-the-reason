@@ -64,7 +64,7 @@ export class App extends React.Component {
                             >
                                 <TopImage src={this.state.image} alt={"splash"} />
                             </Suspense>
-                            <Overlapped bottom={0}>
+                            <Overlapped pointerEvents={"none"} bottom={0}>
                                 <Text color={"white"} fontSize={"6.5rem"}>
                                     '19
                                 </Text>
@@ -76,7 +76,7 @@ export class App extends React.Component {
                             </Text>
                         </Centered>
                         <Centered>
-                            <Input align={"center"} fontSize={"4rem"} />
+                            <Input textAlign={"center"} fontSize={"4rem"} />
                         </Centered>
                     </Card>
                 </AppWrapper>

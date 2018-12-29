@@ -4,20 +4,13 @@ import PropTypes from "prop-types";
 
 export function Centered(props) {
     return (
-        <Wrapper
-            display="flex"
-            styles={`
-                justify-content: center;
-                align-items: center;
-                position: relative;
-                ${props.styles || ""}
-            `}
-        >
+        <Wrapper display={"flex"} justifyContent={"center"} alignItems={"center"} position={"relative"} {...props}>
             {props.children}
         </Wrapper>
     );
 }
 
 Centered.propTypes = {
+    ...Wrapper.propTypes,
     styles: PropTypes.string,
 };

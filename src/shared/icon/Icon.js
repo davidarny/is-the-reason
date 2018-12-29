@@ -5,14 +5,13 @@ import Centered from "shared/centered";
 export function Icon(props) {
     return (
         <Centered
-            styles={`
-                width: ${props.size}px;
-                height: ${props.size}px;
-                border-radius: 50%;
-                background-color: ${props.background};
-                padding: 10px;
-                cursor: pointer;
-            `}
+            width={`${props.size}px`}
+            height={`${props.size}px`}
+            borderRadius={"50%"}
+            background={props.background}
+            p={"10px"}
+            cursor={"pointer"}
+            {...props}
         >
             <img alt={"Icon"} {...props} onError={(event) => onImageLoadError(event, props.size)} />
         </Centered>
@@ -20,6 +19,7 @@ export function Icon(props) {
 }
 
 Icon.propTypes = {
+    ...Centered.propTypes,
     size: PropTypes.number.isRequired,
     src: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,

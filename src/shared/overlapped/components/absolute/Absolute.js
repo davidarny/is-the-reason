@@ -1,14 +1,23 @@
 import styled from "styled-components";
+import * as system from "styled-system";
 
-export const Absolute = styled.div.attrs((props) => ({
-    top: props.top,
-    left: props.left,
-    bottom: props.bottom,
-    right: props.right,
-}))`
+const pointerEvents = system.style({
+    prop: "pointerEvents",
+    cssProperty: "pointerEvents",
+});
+
+export const Absolute = styled.div`
     position: absolute;
-    top: ${(props) => props.top};
-    left: ${(props) => props.left};
-    bottom: ${(props) => props.bottom};
-    right: ${(props) => props.right};
+    ${system.top}
+    ${system.left}
+    ${system.bottom}
+    ${system.right}
+    ${pointerEvents}
 `;
+
+Absolute.propTypes = {
+    ...system.top.propTypes,
+    ...system.left.propTypes,
+    ...system.bottom.propTypes,
+    ...system.right.propTypes,
+};

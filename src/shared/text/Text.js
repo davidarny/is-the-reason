@@ -1,12 +1,15 @@
 import styled from "styled-components";
+import * as system from "styled-system";
 
-export const Text = styled.span.attrs((props) => ({
-    fontSize: props.fontSize,
-    align: props.align,
-    color: props.color,
-}))`
-    font-family: ${(props) => props.theme.font};
-    font-size: ${(props) => props.fontSize};
-    text-align: ${(props) => props.align};
-    color: ${(props) => props.color};
+export const Text = styled.span`
+    font-family: ${system.themeGet("font")};
+    ${system.fontSize}
+    ${system.textAlign}
+    ${system.color}
 `;
+
+Text.propTypes = {
+    ...system.fontSize.propTypes,
+    ...system.textAlign.propTypes,
+    ...system.color.propTypes,
+};

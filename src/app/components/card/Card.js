@@ -6,15 +6,13 @@ export function Card(props) {
     return (
         <Wrapper
             display={"grid"}
-            styles={`
-                grid-template-rows: 6fr auto auto 1fr;
-                grid-row-gap: 1em;
-                padding: 6em 4em;
-                position: relative;
-                transition: box-shadow 0.15s ease-in-out;
-                box-shadow: ${props.shadow};
-                background-color: white;
-            `}
+            gridTemplateRows={"6fr auto auto 1fr"}
+            gridRowGap={"1em"}
+            p={"6em 4em"}
+            position={"relative"}
+            background={"white"}
+            boxShadow={props.shadow}
+            transition={"box-shadow 0.15s ease-in-out"}
             {...props}
         >
             {props.children}
@@ -23,5 +21,6 @@ export function Card(props) {
 }
 
 Card.propTypes = {
+    ...Wrapper.propTypes,
     shadow: PropTypes.string,
 };

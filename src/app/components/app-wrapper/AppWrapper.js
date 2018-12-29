@@ -1,8 +1,7 @@
 import styled from "styled-components";
+import * as system from "styled-system";
 
-export const AppWrapper = styled.div.attrs((props) => ({
-    background: props.background,
-}))`
+export const AppWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,5 +9,9 @@ export const AppWrapper = styled.div.attrs((props) => ({
     height: 100vh;
     width: 100vw;
     transition: background-color 0.15s ease-in-out;
-    background-color: ${(props) => props.background};
+    ${system.background}
 `;
+
+AppWrapper.propTypes = {
+    ...system.background.propTypes,
+};
