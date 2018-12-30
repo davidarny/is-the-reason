@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/is-the-reason/static/media/facebook-icon.6724da4d.svg"
   },
   {
-    "revision": "38759241f354ad51617f",
-    "url": "/is-the-reason/static/js/main.38759241.chunk.js"
+    "revision": "8b8eeaf06bd82e07d840",
+    "url": "/is-the-reason/static/js/main.8b8eeaf0.chunk.js"
   },
   {
     "revision": "4a15bbd374384c74963fc3d7e6691849",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/is-the-reason/static/css/1.a306e476.chunk.css"
   },
   {
-    "revision": "5e3951eb6a135ac7d39fc4aba66216c2",
+    "revision": "719795d2a8f1677efd251625971d2a45",
     "url": "/is-the-reason/index.html"
   }
 ];
