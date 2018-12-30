@@ -5,7 +5,6 @@ import Card from "shared/card";
 import Burger from "shared/burger";
 import Centered from "shared/centered";
 import video from "./videos/background.mp4";
-import audio from "./audios/background.m4a";
 import Socials from "shared/socials";
 import Text from "shared/text";
 import Wrapper from "shared/wrapper";
@@ -13,7 +12,6 @@ import Button from "shared/button";
 import config from "config";
 import { Link } from "react-router-dom";
 import VideoBackground from "./components/video-background";
-import AudioBackground from "./components/audio-background";
 
 export class Home extends React.Component {
     _theme = {
@@ -31,7 +29,6 @@ export class Home extends React.Component {
             <ThemeProvider theme={this._theme}>
                 <FlexWrapper>
                     <VideoBackground background={video} />
-                    <AudioBackground background={audio} />
                     <Centered>
                         <Burger />
                     </Centered>
