@@ -18,20 +18,22 @@ const hoverBackground = system.style({
     cssProperty: "background",
 });
 
+// prettier-ignore-start
 export const StyledIcon = styled(Icon)`
     ${system.background}
     ${system.width}
     ${system.height}
     border-radius: 50%;
-    transition:
-        background-color
-        ${system.themeGet("transitionDuration", "0.15s")}
-        ${system.themeGet("transitionFunction", "ease-in-out")};
+    transition: background-color ${system.themeGet("transitionDuration", "0.15s")} ${system.themeGet(
+    "transitionFunction",
+    "ease-in-out",
+)};
 
     :hover {
         ${hoverBackground}
     }
 `;
+// prettier-ignore-end
 
 StyledIcon.propTypes = {
     ...system.background.propTypes,

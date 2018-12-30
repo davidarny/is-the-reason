@@ -5,7 +5,7 @@ export const Slice = styled.div`
     display: block;
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: ${system.themeGet("burger.background", "black")};
     ${system.space}
 `;
 

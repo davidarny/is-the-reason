@@ -7,7 +7,7 @@ export default {
     },
     transition: {
         duration: "0.15s",
-        function: "ease-out",
+        function: "ease-in-out",
     },
     font: {
         family: "Caveat, sans-serif",

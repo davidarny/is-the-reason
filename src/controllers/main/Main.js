@@ -1,7 +1,7 @@
 import PhotoService from "services/photo";
 import config from "config";
 
-export class App {
+export class Main {
     _services = {
         photo: new PhotoService({
             width: config.image.width,

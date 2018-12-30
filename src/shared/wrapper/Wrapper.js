@@ -26,6 +26,7 @@ export const Wrapper = styled.div`
     ${system.width}
     ${system.height}
     ${system.maxWidth}
+    ${system.maxHeight}
     ${system.zIndex}
     ${cursor}
     ${transition}
@@ -46,6 +47,7 @@ Wrapper.propTypes = {
     ...system.border.propTypes,
     ...system.width.propTypes,
     ...system.maxHeight.propTypes,
+    ...system.maxWidth.propTypes,
     ...system.height.propTypes,
     ...system.zIndex.propTypes,
 };

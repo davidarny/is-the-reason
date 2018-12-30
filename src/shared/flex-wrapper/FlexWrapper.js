@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import * as system from "styled-system";
 
-export const AppWrapper = styled.div`
+export const FlexWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,8 +10,10 @@ export const AppWrapper = styled.div`
     width: 100vw;
     transition: background-color 0.15s ease-in-out;
     ${system.background}
+    ${system.backgroundSize}
 `;
 
-AppWrapper.propTypes = {
+FlexWrapper.propTypes = {
     ...system.background.propTypes,
+    ...system.backgroundSize.propTypes,
 };
