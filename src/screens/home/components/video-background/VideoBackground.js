@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 function VideoBackground(props) {
     return (
-        <video autoPlay muted loop className={props.className}>
+        <video autoPlay muted loop preload={"true"} className={props.className}>
             <source src={props.background} type={"video/mp4"} />
         </video>
     );
