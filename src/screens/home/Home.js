@@ -4,13 +4,14 @@ import FlexWrapper from "shared/flex-wrapper";
 import Card from "shared/card";
 import Burger from "shared/burger";
 import Centered from "shared/centered";
-import background from "./img/background.jpg";
+import background from "./videos/background.mp4";
 import Socials from "shared/socials";
 import Text from "shared/text";
 import Wrapper from "shared/wrapper";
 import Button from "shared/button";
 import config from "config";
 import { Link } from "react-router-dom";
+import VideoBackground from "./components/video-background";
 
 export class Home extends React.Component {
     _theme = {
@@ -26,7 +27,8 @@ export class Home extends React.Component {
     render() {
         return (
             <ThemeProvider theme={this._theme}>
-                <FlexWrapper background={`url(${background}) center no-repeat`} backgroundSize={"cover"}>
+                <FlexWrapper>
+                    <VideoBackground background={background} />
                     <Centered>
                         <Burger />
                     </Centered>

@@ -8,8 +8,8 @@ export class App extends React.Component {
         return (
             <Router>
                 <Switch>
-                    <Route exact path={"/"} component={Home} />
-                    <Route exact path={"/main"} component={Main} />
+                    <Route exact path={process.env.PUBLIC_URL + "/"} component={Home} />
+                    <Route exact path={process.env.PUBLIC_URL + "/main"} component={Main} />
                 </Switch>
             </Router>
         );
