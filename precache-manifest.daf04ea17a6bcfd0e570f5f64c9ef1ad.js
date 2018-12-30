@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/is-the-reason/static/media/facebook-icon.6724da4d.svg"
   },
   {
-    "revision": "8b8eeaf06bd82e07d840",
-    "url": "/is-the-reason/static/js/main.8b8eeaf0.chunk.js"
+    "revision": "78e52b447063059700e7",
+    "url": "/is-the-reason/static/js/main.78e52b44.chunk.js"
   },
   {
     "revision": "4a15bbd374384c74963fc3d7e6691849",
@@ -60,15 +60,15 @@ self.__precacheManifest = [
     "url": "/is-the-reason/static/media/black-linkedin-icon.bfad0c3e.svg"
   },
   {
-    "revision": "c27568c092dcd011b042",
-    "url": "/is-the-reason/static/js/1.c27568c0.chunk.js"
+    "revision": "97eddbf090f3b06126b6",
+    "url": "/is-the-reason/static/js/1.97eddbf0.chunk.js"
   },
   {
-    "revision": "c27568c092dcd011b042",
+    "revision": "97eddbf090f3b06126b6",
     "url": "/is-the-reason/static/css/1.a306e476.chunk.css"
   },
   {
-    "revision": "719795d2a8f1677efd251625971d2a45",
+    "revision": "d3cae28d520f809f3081ce4e9d59c5d1",
     "url": "/is-the-reason/index.html"
   }
 ];
