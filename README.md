@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+[![David](https://img.shields.io/david/DavidArutiunian/is-the-reason.svg)](https://github.com/DavidArutiunian/is-the-reason)
+[![GitHub license](https://img.shields.io/github/license/DavidArutiunian/is-the-reason.svg)](https://github.com/DavidArutiunian/is-the-reason/blob/master/LICENSE.md)
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier)
+![GitHub top language](https://img.shields.io/github/languages/top/DavidArutiunian/is-the-reason.svg)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/DavidArutiunian/is-the-reason.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/DavidArutiunian/is-the-reason.svg)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
