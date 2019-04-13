@@ -7,6 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/DavidArutiunian/is-the-reason.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/DavidArutiunian/is-the-reason.svg)
 ![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/DavidArutiunian/is-the-reason.svg)
+[![TLOC](https://tokei.rs/b1/github/DavidArutiunian/is-the-reason)](https://github.com/DavidArutiunian/is-the-reason)
 
 ## Available Scripts
 
